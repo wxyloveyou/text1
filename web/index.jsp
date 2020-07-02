@@ -12,6 +12,6 @@
   </head>
   <body>
   hello world;
-  hello world;
+  hello;
   </body>
 </html>
