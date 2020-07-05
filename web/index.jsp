@@ -5,13 +5,22 @@
   Time: 14:32
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  hello world;
-  hello;
-  </body>
+<head>
+  <title>My calculator</title>
+</head>
+<body style="text-align:center;">
+<form action="index.jsp" method="post">
+
+  计算器
+  第一个数
+  <input type="text" name="firstNum"/>
+  选择操纵
+
+  第二个
+  <input type="text" name="secondNum"/>
+  </table>
+</form>
+</body>
 </html>
