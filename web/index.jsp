@@ -12,14 +12,36 @@
 </head>
 <body style="text-align:center;">
 <form action="index.jsp" method="post">
-
-  计算器
-  第一个数
+  <tr>
+    <td colspan="3">简单的计算器</td>
+  </tr>
+  <tr>
+    <td>第一个数</td>
+    <td>
+      <input type="text" name="firstNum"/>
+    </td>
+  </tr>
   <input type="text" name="firstNum"/>
-  选择操纵
+  <tr>
+    <td>选择操纵</td>
+    <td>
+      <select name="operator">
 
-  第二个
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>第二个数</td>
+    <td>
+      <input type="text" name="secondNum"/>
+    </td>
+  </tr>
   <input type="text" name="secondNum"/>
+  <tr>
+    <td colspan="3">
+      <input type="submit" value="计算"/>
+    </td>
+  </tr>
   </table>
 </form>
 </body>
