@@ -11,7 +11,8 @@
   <title>My calculator</title>
 </head>
 <body style="text-align:center;">
-<form action="index.jsp" method="post">
+<form>
+  <table width="404" border="1">
   <tr>
     <td colspan="3">简单的计算器</td>
   </tr>
@@ -44,6 +45,7 @@
       <input type="submit" value="计算"/>
     </td>
   </tr>
+
   </table>
 </form>
 </body>
