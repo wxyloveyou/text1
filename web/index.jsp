@@ -11,7 +11,8 @@
   <title>My calculator</title>
 </head>
 <body style="text-align:center;">
-<form>
+
+<form action="index.jsp" method="post">
   <table width="404" border="1">
   <tr>
     <td colspan="3">简单的计算器</td>
@@ -26,9 +27,9 @@
     <td>选择操纵</td>
     <td>
       <select name="operator">
-        <option value="+">+/<option>
+        <option value="+">+/</option>
         <option value="-">-</option>
-        <option value="*">*<option>
+        <option value="*">*</option>
         <option value="/">/</option>
       </select>
     </td>
@@ -47,6 +48,7 @@
   </tr>
 
   </table>
+
 </form>
 </body>
 </html>
