@@ -21,22 +21,24 @@
       <input type="text" name="firstNum"/>
     </td>
   </tr>
-  <input type="text" name="firstNum"/>
   <tr>
     <td>选择操纵</td>
     <td>
       <select name="operator">
-
+        <option value="+">+/<option>
+        <option value="-">-</option>
+        <option value="*">*<option>
+        <option value="/">/</option>
       </select>
     </td>
   </tr>
+
   <tr>
     <td>第二个数</td>
     <td>
       <input type="text" name="secondNum"/>
     </td>
   </tr>
-  <input type="text" name="secondNum"/>
   <tr>
     <td colspan="3">
       <input type="submit" value="计算"/>
