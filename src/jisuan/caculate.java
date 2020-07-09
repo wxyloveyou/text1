@@ -32,6 +32,26 @@ public class caculate {
     public void calculate(){
         BigDecimal first = new BigDecimal(this.firstNum);
         BigDecimal second = new BigDecimal(this.seconeNum);
-        //TODO
+        switch (this.opertor){
+            case '+':{
+                this.result=first.add(second).toString();
+                break;
+            }
+            case :'-'{
+                this.result=first.subtract(second).toString();
+                break;
+            }
+            case :'*'{
+                this.result=first.multiply(second).toString();
+                break;
+            }
+            case :'/'{
+                if (second.doubleValue()==0){
+                    throw new RuntimeException("被除数为了0，NULL")；
+                }
+                this.result=first.divide(second).toString();
+            }
+
+        }
     }
 }
