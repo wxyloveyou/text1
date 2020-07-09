@@ -6,24 +6,43 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 <html>
 <head>
-    <base href="<%=basePath%>">
+
   <title>My calculator</title>
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-    <meta http-equiv="description" content="This is my page">
-    <!--
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    -->
+    <style type="text/css">
+      body{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+      form{
+        margin-left:500px;
+      }
+    </style>
 </head>
 
+<body style="text-align:center;">
+<jsp:useBean id="caculate" class="jisuan.caculate"></jsp:useBean>
+<jsp:setProperty name="caculate" property="*"/>
+<%
+  try{
+    //caculate.calculate();
+  }
+  catch(Exception e){
+
+    out.write(e.getMessage());
+  }
+%>
+<br/>-----------------------------------------------------<br/>
+    计算结果是：
+<jsp:getProperty name="caculate" property="firstNum"/>
+<jsp:getProperty name="caculate" property="operator"/>
+<jsp:getProperty name="caculate" property="secondNum"/>
+=
+<jsp:getProperty name="caculate" property="result"/>
+<br/>-----------------------------------------------------<br/>
 <form action="index.jsp" method="post">
   <table width="404" border="1">
   <tr>
