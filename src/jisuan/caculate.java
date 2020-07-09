@@ -17,5 +17,21 @@ public class caculate {
     public void setSeconeNum(String seconeNum){
         this.seconeNum=seconeNum;
     }
-
+    public char getOpertor(){
+        return opertor;
+    }
+    public void setOpertor(char operator){
+        this.opertor = operator;
+    }
+    public String getResult(){
+        return result;
+    }
+    public void setResult(){
+        this.result=result;
+    }
+    public void calculate(){
+        BigDecimal first = new BigDecimal(this.firstNum);
+        BigDecimal second = new BigDecimal(this.seconeNum);
+        //TODO
+    }
 }
