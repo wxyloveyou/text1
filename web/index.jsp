@@ -11,16 +11,16 @@
 <head>
 
   <title>My calculator</title>
-    <style type="jisuan/css">
-      body{
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-      }
-      form{
-        margin-left:500px;
-      }
-    </style>
+  <style type="jisuan/css">
+    body{
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    }
+    form{
+      margin-left : 500px;
+    }
+  </style>
 </head>
 
 <body style="text-align:center;">
@@ -36,7 +36,7 @@
   }
 %>
 <br/>-----------------------------------------------------<br/>
-    计算结果是：
+计算结果是：
 <jsp:getProperty name="caculate" property="firstNum"/>
 <jsp:getProperty name="caculate" property="operator"/>
 <jsp:getProperty name="caculate" property="secondNum"/>
@@ -66,17 +66,17 @@
     </td>
   </tr>
 
-  <tr>
-    <td>第二个数</td>
-    <td>
-      <input type="text" name="secondNum"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="3">
-      <input type="submit" value="计算"/>
-    </td>
-  </tr>
+    <tr>
+      <td>第二个数</td>
+      <td>
+        <input type="text" name="secondNum"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <input type="submit" value="计算"/>
+      </td>
+    </tr>
 
   </table>
 
